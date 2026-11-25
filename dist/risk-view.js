@@ -1,5 +1,6 @@
 import {PRESETS,RISK_SOURCE,eventExposure,stressCases,annualExposure,validateRisk} from './risk-model.js';
-const money=n=>new Intl.NumberFormat('en-AU',{style:'currency',currency:'AUD',maximumFractionDigits:0}).format(n),fmt=n=>new Intl.NumberFormat('en-AU',{maximumFractionDigits:1}).format(n);
+const moneyFormatter=new Intl.NumberFormat('en-AU',{style:'currency',currency:'AUD',maximumFractionDigits:0}),numberFormatter=new Intl.NumberFormat('en-AU',{maximumFractionDigits:1});
+const money=n=>moneyFormatter.format(n),fmt=n=>numberFormatter.format(n);
 const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let cachedKey='',cachedResult;
 function annual(a){const key=JSON.stringify(a);if(cachedKey!==key){cachedResult=annualExposure(a);cachedKey=key}return cachedResult}

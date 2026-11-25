@@ -7,6 +7,11 @@ export const PERIODS = [
 ];
 export const CATEGORIES=['Flour & raw ingredients','Bread & rolls','Pastries & baked goods','Bakery by-products'];
 export const ROLES=['Farmer / supplier','Manufacturer / packer','Distributor'];
+// Three featured examples for Business Planning; the wider network powers the dashboard.
+export const BUSINESS_EXAMPLE_PLAN_IDS=['p1','p5','p3'];
+export const DEMAND_EXAMPLE_IDS=['d1','d2','d3','d4'];
+export const NETWORK_SEED_DEMAND_IDS=['d1','d2','d3','d4','d5','d6','d7','d8','d9','d10'];
+export const NETWORK_SEED_PLAN_IDS=['p1','p2','p3','p4','p5','p6','p7','p8','p9'];
 export function seedData(){
  return {version:3,plans:[
  {id:'p1',business:'Southern Grain Supply',role:ROLES[0],region:'VIC',period:'2026-11-30',category:CATEGORIES[0],stream:'Edible',material:'Surplus bread flour',reason:'Order reduction',qty:1200,forecast:18000,ordered:16200,notices:[2,3,1],handling:'Sealed 20 kg bags. Contains wheat / gluten. Recipient to confirm specification and shelf life.'},

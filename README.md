@@ -33,6 +33,10 @@ npm run build
 - `src/style.css`: responsive layout and visual design.
 - `tests/`: calculation, allocation, duplicate-confirmation and render smoke checks. Render checks use a minimal DOM substitute, not a browser.
 
+Business Planning features three seed examples: edible flour from a supplier, inedible residues from a manufacturer, and edible rolls from a distributor. User-created plans also appear. Other seed plans remain in the wider network for dashboard totals and EFWA matching, and existing handovers remain accessible.
+
+The EFWA demand table features four seed forecasts (flour, bread and pastries across VIC, NSW and QLD), plus user-created forecasts. Its demand totals describe those shown records; the Homepage continues to represent the wider network.
+
 ## Demo assumptions
 
 All organisations, quantities, people counts and business metrics are illustrative. Four weekly periods run from 23 November to 20 December 2026. The seed data includes historical reported outcomes in the first week and forecast plans in subsequent weeks. Filter to 30 Nov–6 Dec to explore a coherent forward planning period: 3,200 kg edible supply, 4,200 kg food demand, 2,900 kg potentially compatible food matches, 300 kg unmatched edible supply and 1,300 kg unfilled demand. Total demand exceeding supply does not eliminate state/category mismatches.
@@ -49,9 +53,9 @@ The website is branded WastePulse. The existing local folder remains `foodloop`;
 
 ## Bakery cost-sharing analysis
 
-The three existing pages now include a standalone financial scenario adapted from the user-supplied `EFWA_Option2_Actuarial_Model.xlsx`. The original workbook is unchanged and is not included in the website build.
+Business Planning and the EFWA workspace include financial scenario tools adapted from the user-supplied `EFWA_Option2_Actuarial_Model.xlsx`. The original workbook is unchanged and is not included in the website build.
 
-- Homepage: average annual exposure, 95th percentile and mean of the worst 5% of simulated annual outcomes.
+- Homepage: operational dashboard only; the illustrative annual-risk section has been removed. Annual scenario statistics remain available in the Business Planning CSV export.
 - Business planning: flour, bread and pastry handover presets; editable event assumptions; cost allocation chart; five stress cases; downloadable scenario CSV.
 - EFWA planning: the currently selected proposed notice-based contribution schedule and limitations on transferring the tomato weather-pool design.
 
