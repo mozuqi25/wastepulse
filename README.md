@@ -57,7 +57,7 @@ Business Planning and the EFWA workspace include financial scenario tools adapte
 
 - Homepage: operational dashboard only; the illustrative annual-risk section has been removed. Annual scenario statistics remain available in the Business Planning CSV export.
 - Business planning: flour, bread and pastry handover presets; editable event assumptions; cost allocation chart; five stress cases; downloadable scenario CSV.
-- EFWA planning: the currently selected proposed notice-based contribution schedule and limitations on transferring the tomato weather-pool design.
+- EFWA planning: demand forecasts and recovery partners. The separate Proposed Incentive Mechanism section has been removed; cost-sharing analysis remains in the collapsed Business Planning lab.
 
 Model and presentation live in `src/risk-model.js` and `src/risk-view.js`. Scenario inputs persist with browser state; they do not modify operational plans, matches, waste outcomes or people served. Dashboard region/period/category filters do not filter this independently labelled scenario.
 
