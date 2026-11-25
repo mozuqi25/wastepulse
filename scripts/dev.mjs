@@ -9,4 +9,4 @@ http.createServer((req,res)=>{
  const file=resolve(root,'.'+decodeURIComponent(pathname==='/'?'/index.html':pathname));
  if(!file.startsWith(root+'/')){res.writeHead(403);res.end();return}
  readFile(file,(err,data)=>{if(err){res.writeHead(404);res.end('Not found');return}const ext=extname(file);res.setHeader('Content-Type',({'.html':'text/html','.js':'text/javascript','.css':'text/css'})[ext]||'application/octet-stream');res.setHeader('Cache-Control','no-store');res.end(ext==='.html'?data.toString()+`<script>new EventSource('/__reload').onmessage=()=>location.reload()</script>`:data)})
-}).listen(5173,'127.0.0.1',()=>console.log('Foodloop local: http://127.0.0.1:5173'));
+}).listen(5173,'127.0.0.1',()=>console.log('WastePulse local: http://127.0.0.1:5173'));

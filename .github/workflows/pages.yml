@@ -1,4 +1,4 @@
-name: Deploy Foodloop to GitHub Pages
+name: Deploy WastePulse to GitHub Pages
 
 on:
   push:

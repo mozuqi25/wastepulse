@@ -1,4 +1,4 @@
-# Foodloop bakery planning prototype
+# WastePulse bakery planning prototype
 
 A dependency-free, local-first prototype organised into three workspaces:
 
@@ -45,7 +45,7 @@ Inedible material is not automatically suitable for any process. Industrial dryi
 
 Planning indicators use the same period and kilogram unit: actual ordered / forecast volume × 100; total notice days / number of changes. They are advisory, not waste predictions or financial baselines. Incentives and data policies are proposed concepts, not existing entitlements or verified compliance.
 
-Data is saved in browser localStorage under `foodloop-bakery-planning-v3`. Use **Reset demo** to restore the original seed data. Prior prototype data uses a separate storage key and is not migrated. There is no backend, shared account state, real booking, message, access control, payment or carbon credit.
+The website is branded WastePulse. The existing local folder remains `foodloop`; browser storage retains the legacy key `foodloop-bakery-planning-v3` to preserve saved plans. Use **Reset demo** to restore the original seed data. Prior prototype data uses a separate storage key and is not migrated. There is no backend, shared account state, real booking, message, access control, payment or carbon credit.
 
 ## Bakery cost-sharing analysis
 
