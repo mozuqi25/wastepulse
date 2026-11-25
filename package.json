@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "node scripts/dev.mjs",
     "build": "node scripts/build.mjs",
-    "check": "node --check src/app.js && node --check src/data.js && node --check src/model.js",
+    "check": "node --check src/app.js && node --check src/data.js && node --check src/model.js && node --check src/risk-model.js && node --check src/risk-view.js",
     "test": "node --test tests/*.test.mjs"
   }
 }
